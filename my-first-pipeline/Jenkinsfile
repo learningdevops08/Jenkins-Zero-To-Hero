@@ -1,8 +1,10 @@
 pipeline {
   agent none
-    stage('Run') {
+  stages{
+    stage ('Run') {
       steps {
         sh './scripts/files.sh'
   }
 }
   }
+}
