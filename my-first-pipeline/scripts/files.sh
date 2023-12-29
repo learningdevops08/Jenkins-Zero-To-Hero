@@ -1,3 +1,2 @@
 #!/bin/bash
-$ mkdir f1
-$ free >> f1
+echo "this is working"
