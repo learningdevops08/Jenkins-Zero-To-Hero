@@ -8,5 +8,8 @@ pipeline {
         sh 'python --version'
       }
     }
+    stage('Run') {
+      steps {
+        sh './file.sh'
   }
 }
