@@ -1,11 +1,11 @@
 pipeline {
   agent {
-    docker { image 'node:16-alpine' }
+    docker { image 'python:3.13.0a2-bookworm' }
   }
   stages {
     stage('Test') {
       steps {
-        sh 'node --version'
+        sh 'python --version'
       }
     }
   }
