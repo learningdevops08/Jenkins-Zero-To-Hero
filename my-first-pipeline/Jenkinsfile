@@ -1,17 +1,8 @@
 pipeline {
-  agent {
-    docker { image 'python:3.13.0a2-bookworm' }
-  }
-  stages {
-    stage('Test') {
-      steps {
-        sh 'python --version'
-      }
-    }
+  agent none
     stage('Run') {
       steps {
         sh './scripts/files.sh'
   }
 }
   }
-}
